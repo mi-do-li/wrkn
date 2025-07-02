@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "site": "YOUR_SITE_ID",
+    "public": "public",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "function": "nextApp"
+      }
+    ]
+  },
+  "functions": {
+    "source": ".",
+    "runtime": "nodejs18"
+  }
+}
